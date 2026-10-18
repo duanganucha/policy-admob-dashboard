@@ -11,10 +11,12 @@
 <li><b>Google account sign-in:</b> your Google account email address and display name, used only to verify that you are the authorised owner of the dashboard.</li>
 <li><b>AdMob report data:</b> aggregated earnings, impressions, clicks and app names from the AdMob account of the owner, obtained through the read-only AdMob API (scope <code>admob.readonly</code>). The app cannot change anything in AdMob.</li>
 <li><b>Device push token:</b> a Firebase Cloud Messaging token, used only to send earnings notifications to the owner's device.</li>
+<li><b>Advertising:</b> the app displays banner and interstitial ads served by Google AdMob. Google may collect the device advertising identifier (Android Advertising ID / iOS IDFA, on iOS only if you allow tracking in the system prompt) and device information to serve and measure ads, as described in <a href="https://policies.google.com/technologies/ads">Google's advertising policy</a>. You can reset or opt out of the advertising ID in your device settings.</li>
 <li><b>Currency rate:</b> the app requests a public USD/THB exchange rate; no personal data is sent.</li>
 </ul>
 <h2>How data is used and stored</h2>
-<p>Data is stored in Google Firebase (Cloud Firestore and Cloud Functions) operated by the developer, protected by authentication and security rules. Data is used only to display reports and notifications inside the app. We do not sell, rent or share data with third parties, and the app shows no advertising and does not use analytics or tracking.</p>
+<p>Apart from advertising (above), the app does not use analytics or third-party tracking.</p>
+<p>Data is stored in Google Firebase (Cloud Firestore and Cloud Functions) operated by the developer, protected by authentication and security rules. Data is used only to display reports and notifications inside the app. We do not sell or rent personal data.</p>
 <h2>Security</h2>
 <p>All traffic uses HTTPS. Access tokens are kept in Google Secret Manager on the server, not on the device.</p>
 <h2>Retention and deletion</h2>
